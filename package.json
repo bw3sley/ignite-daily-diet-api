@@ -1,0 +1,36 @@
+{
+  "name": "ignite-daily-diet-api",
+  "version": "1.0.0",
+  "main": "./src/server.ts",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx watch .",
+    "knex": "node --no-warnings --import tsx ./node_modules/knex/bin/cli.js",
+    "lint": "eslint src --ext .ts --fix",
+    "test": "vitest",
+    "build": "tsup src --out-dir dist"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cookie": "^9.3.1",
+    "dotenv": "^16.4.1",
+    "fastify": "^4.25.2",
+    "knex": "^3.1.0",
+    "pg": "^8.11.3",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.1.0",
+    "@types/node": "^20.11.6",
+    "@types/supertest": "^6.0.2",
+    "eslint": "^8.56.0",
+    "sqlite3": "^5.1.7",
+    "supertest": "^6.3.4",
+    "tsup": "^8.0.1",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.2"
+  }
+}
